@@ -13,13 +13,22 @@ func main() {
 	// fmt.Println(cards)
 
 	cards := newDeck()
-	// cards.print()
 
 	hand, remainingCards := deal(cards, 3)
 
 	hand.print()
-
-	fmt.Println("Remaining cards---------")
-
+	fmt.Println("----------Remaining cards---------")
 	remainingCards.print()
+
+	// fmt.Println(hand.toString())
+
+	cards.saveToFile("my_cards")
+
+	cardFromFile := newDeckFromFile("my_cards")
+	fmt.Println("----------card from file --------")
+	cardFromFile.print()
+
+	cards.shuffle()
+	fmt.Println("-------After Shuffle----------")
+	cards.print()
 }

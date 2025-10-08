@@ -49,7 +49,7 @@ This project includes unit tests. You can run them via terminal or through VS Co
 ```
 go test
 ```
-This runs all tests in files ending with _test.go.
+This runs all tests in files ending with `_test.go`.
 
 🔹 Option 2: Run Tests in VS Code
 - Open the test file (e.g., deck_test.go) in VS Code.
