@@ -29,6 +29,24 @@ func main(){
 	ram.contact.email ="ram@gmail.com"
 	ram.contact.zipcode = 79964
 
+	fmt.Printf("%+v", ram)
+
+	ram.updateName("Gopal")
+	fmt.Println(ram) // no change in main object
+
+	ramPointer := &ram
+	ramPointer.updateFirstName("Gopal")
 	fmt.Println(ram)
 
+	ram.updateFirstName("Kesahv")
+	fmt.Println(ram)
+
+}
+
+func (p person) updateName(newFirstName string){
+	p.firstName = newFirstName
+}
+
+func (pointerToPerson *person) updateFirstName(newFirstName string){
+	(*pointerToPerson).firstName = newFirstName
 }
