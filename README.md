@@ -1,18 +1,22 @@
-# 🃏 Cards Project (Go)
+# 🂡 GoCardsLab — A Hands-on Go Learning Project
 
-A simple Go project to simulate a deck of cards. It covers concepts like:
+A beginner-friendly Go project designed to explore **core Go concepts** through a practical example: simulating a deck of cards 🎴.  
+This project also includes examples and exercises on **Go fundamentals** like channels, interfaces, and structs — making it an excellent foundation for anyone learning Go.
 
-- Custom types
-- Slices and functions
-- File I/O (save/load deck to/from file)
-- Error handling
-- Unit testing in Go
 
 ---
 
 ## 🛠️ Prerequisites
 
 Before running the project, make sure you have:
+
+- **Go installed on your system**
+
+  👉 [Install Go from the official site](https://go.dev/doc/install)
+
+- *(Optional)* **VS Code** with the **Go extension** for an enhanced development experience.
+
+---
 
 - **Go installed on your system**
 
@@ -58,3 +62,14 @@ This runs all tests in files ending with `_test.go`.
 
   
 Make sure you have the official Go extension installed in VS Code.
+
+---
+
+## 💡 Learning Goals
+- By exploring this project, you’ll learn how to:
+- Create and use custom types
+- Work efficiently with slices and functions
+- Define and implement structs and interfaces
+- Use channels and goroutines for concurrency
+- Write and execute unit tests in Go
+- Perform file I/O operations safely and efficiently
